@@ -50,6 +50,10 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', function(req, res){
+  res.render('projects.hbs');
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Something went wrong!'
